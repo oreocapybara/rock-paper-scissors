@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.action {
+    
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    
+
+}
+
+.action:active {
+    transform: translateY(1px);
+}
+
+.scores {
+ 
+    font-weight: 600;
+    font-size: 3rem;
+   
+}
+
+.scores #human{
+    color: lightblue;
+}
+
+.scores #computer{
+    color: lightcoral
+}
+
+.roundMessage {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.result {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
