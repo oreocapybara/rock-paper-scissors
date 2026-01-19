@@ -2,20 +2,109 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rock Paper Scissors Project</title>
-		<link rel="stylesheet" href="style.css" />
+
+		<!-- Anonymous Pro Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="animations.css">
 	</head>
 	<body>
-		<h1>Rock Paper Scissors</h1>
-		<button class="action" id="rock" value="rock">Rock</button>
-		<button class="action" id="paper" value="paper">Paper</button>
-		<button class="action" id="scissors" value="scissors">Scissors</button>
-		<button class="action" id="restart" value="restart">Play Again</button>
-		<p class="scores">
-			<span id="human">0</span> : <span id="computer">0</span> <br> Score 
-		</p>
-		<p class="roundMessage"></p>
-		<p class="result" id="result"></p>
+
+		<div class="frame">
+			<h1>ROCK PAPER SCISSORS</h1>
+
+			<!-- Background Clutter -->
+			<img src="./assets/background/clutter-1.png" class="clutter-1 background" draggable="false">
+			<img src="./assets/background/clutter-2.png" class="clutter-2 background" draggable="false">
+			<img src="./assets/background/clutter-3.png" class="clutter-3 background"
+			draggable="false">
+			<img src="./assets/background/clutter-4.png" class="clutter-4 background"
+			draggable="false">
+			<img src="./assets/background/clutter-5.png" class="clutter-5 background"
+			draggable="false">
+			<img src="./assets/background/clutter-6.png" class="clutter-6 background"
+			draggable="false">
+			<img src="./assets/background/clutter-7.png" class="clutter-7 background"
+			draggable="false">
+			<img src="./assets/background/clutter-8.png" class="clutter-8 background"
+			draggable="false">
+			
+			<button class="restart" id="restart" value="restart"><img src="./assets/icons/restart.png" alt="Restart the Game"
+				draggable="false"></button>
+
+			<section class="main-container">
+				<div class="center-container">
+					<div class="score-container">
+						<div class="score-line player">
+							<img src="./assets/background/score-line.png" draggable="false"/>
+							<div class="score-card player">
+								<h2 class="score" id="player"></h2>
+							</div>
+						</div>
+						<div class="score-line computer">
+							<img src="./assets/background/score-line2.png" draggable="false"/>
+							<div class="score-card computer">
+								<h2 class="score" id="computer"></h2>
+							</div>
+						</div>
+					</div>
+
+					<!-- Action Selection Container -->
+					<div class="selection-container">
+						<div class="display-action player">
+							<img src="" alt="" class="player-action" draggable="false" />
+						</div>
+
+						<div class="round-container">
+							<h3 class="round"></h3>
+							<div class="round-card"><p class="round-message"></p></div>
+							<p class="round-info"></p>
+						</div>
+
+
+						<div class="display-action computer">
+							<img src="" alt="" class="computer-action" draggable="false" />
+						</div>
+					</div>
+
+					<aside class="action-bar">
+						<button class="action rock" id="rock" value="rock">
+							<img src="./assets/icons/rock.png"  alt="Rock" draggable="false"/>
+							<label for="#rock">Rock</label>
+						</button>
+						<button class="action paper" id="paper" value="paper">
+							<img src="./assets/icons/paper.png" alt="Paper" draggable="false"/>
+							<label for="#paper">Paper</label>
+						</button>
+						<button class="action scissors" id="scissors" value="scissors">
+							<img src="./assets/icons/scissors.png" alt="Scissors" draggable="false"/>
+							<label for="scissors">Scissors</label>
+						</button>
+					</aside>
+
+					
+				</div>
+
+				<section class="round-history-container">
+					<ul class="round-history hidden">
+						<div class="scroll-area"></div>
+					</ul>
+
+					<button id="toggle-history"><img src="./assets/icons/arrow.png" alt="Toggle round history" draggable="false"></button>
+				</section>
+			</section>
+		</div>
 		<script src="./script.js"></script>
-	</body>
-</html>
+	</body
