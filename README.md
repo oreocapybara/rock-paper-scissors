@@ -1,7 +1,5 @@
 # rock-paper-scissors
 
-Simple numbered pseudocode (layman's terms) for `script.js`:
-
 1. Grab page elements: the two score displays (human, computer), the result text, the round message, the choice buttons, and the restart button.
 2. Set both scores to 0.
 3. Computer picks randomly: return "rock", "paper", or "scissors".
