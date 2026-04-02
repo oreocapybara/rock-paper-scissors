@@ -1,5 +1,7 @@
 # rock-paper-scissors
 
+<img width="1920" height="1052" alt="image" src="https://github.com/user-attachments/assets/76d093f9-ec71-4791-ace1-0eae908c3188" />
+
 1. Grab page elements: the two score displays (human, computer), the result text, the round message, the choice buttons, and the restart button.
 2. Set both scores to 0.
 3. Computer picks randomly: return "rock", "paper", or "scissors".
