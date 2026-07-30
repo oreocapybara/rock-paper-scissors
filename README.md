@@ -19,8 +19,4 @@
 	- Reset both scores to 0.
 	- Clear the result and round messages.
 	- Hide the restart button and start a fresh five-round game.
-10. Implementation tips:
-	- Don't treat the restart button as a choice button.
-	- Either wait for clicks with a Promise/await or let clicks directly drive the rounds.
-	- Use one-time listeners or remove listeners after a click to avoid duplicate handling.
 
